@@ -5,7 +5,7 @@
 该脚手架依赖的库包只有：
 
 包名|版本|描述
---|:--:|--:
+--|:--:|--
 @babel/cli | ^7.1.5 | Babel 命令工具
 @babel/core | ^7.1.6 | Babel 核心包
 babel-core | 7.0.0-bridge.0 | Babel7 与 Babel6 兼容包
