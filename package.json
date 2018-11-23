@@ -1,0 +1,9 @@
+{
+  "name": "nbjs-v0",
+  "version": "0.0.1",
+  "main": "lib/main.js",
+  "repository": "https://github.com/wenris/node-babel-jest-startkit",
+  "license": "MIT",
+  "description": "搭建 Node + Babel7 + Jest 的脚手架，用于开发试验 Node 应用。",
+  "author": "Wenris"
+}
