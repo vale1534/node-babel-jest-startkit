@@ -4,15 +4,15 @@
 
 ## 库包依赖
 
-包名|版本|描述
---|:--:|--
-@babel/cli | ^7.1.5 | Babel 命令工具
-@babel/core | ^7.1.6 | Babel 核心包
-babel-core | 7.0.0-bridge.0 | Babel7 与 Babel6 兼容包
-babel-jest | ^23.6.0 | Babel 与 Jest 联姻包
-babel-preset-airbnb | ^3.0.1 | 来自 airbnb 的 Babel 预设包
-jest | ^23.6.0 | Jest 测试套件
-regenerator-runtime | ^0.13.1 | 用于 generator、 async 函数的运行时支持包
+| 包名 | 版本 | 描述 |
+|--------|:--------:|--------|
+| @babel/cli | ^7.1.5 | Babel 命令工具 |
+| @babel/core | ^7.1.6 | Babel 核心包 |
+| babel-core | 7.0.0-bridge.0 | Babel7 与 Babel6 兼容包 |
+| babel-jest | ^23.6.0 | Babel 与 Jest 联姻包 |
+| babel-preset-airbnb | ^3.0.1 | 来自 airbnb 的 Babel 预设包 |
+| jest | ^23.6.0 | Jest 测试套件 |
+| regenerator-runtime | ^0.13.1 | 用于 generator、 async 函数的运行时支持包 |
 
 ## 项目操作命令
 
