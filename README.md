@@ -10,6 +10,48 @@
 git clone https://github.com/wenris/node-babel-jest-startkit.git new-app
 ```
 
+依赖安装：
+
+```
+yarn install --registry=http://registry.npm.taobao.org
+```
+
+## 项目操作命令
+
+1. 将 src/ 目录下的 js 文件转译到 lib/ 目录：
+
+```sh
+yarn build
+### 等效于
+node ./node_modules/.bin/babel ./src --out-dir ./lib
+```
+
+2. 运行主程序（即`lib/main.js`）：
+
+```sh
+yarn start
+### 等效于
+node ./lib/main.js
+```
+
+3. 测试命令
+
+```sh
+yarn test
+### 等效于
+node ./node_modules/.bin/jest ./src
+```
+
+另外，可执行 `yarn build:watch` 在文件改动时实时编译，执行 `yarn test:watch` 用于实时测试。
+
+有时需要运行一些工具脚本，需要用到 babel 转译，方法如下：
+
+```sh
+yarn esrun tool.js
+### 等效于
+node -r @babel/register tool.js
+```
+
 ## 库包依赖
 
 | 包名 | 版本 | 描述 |
@@ -21,28 +63,6 @@ git clone https://github.com/wenris/node-babel-jest-startkit.git new-app
 | babel-preset-airbnb | ^3.0.1 | 来自 airbnb 的 Babel 预设包 |
 | jest | ^23.6.0 | Jest 测试套件 |
 | regenerator-runtime | ^0.13.1 | 用于 generator、 async 函数的运行时支持包 |
-
-## 项目操作命令
-
-1. 使用 `yarn build` 构建项目，将 src/ 目录下的 js 文件转译到 lib/ 目录，命令详请：
-
-```
-node ./node_modules/.bin/babel ./src --out-dir ./lib
-```
-
-2. 使用 `yarn start` 运行主脚本，即 lib/main.js ，命令详请：
-
-```
-node ./lib/main.js
-```
-
-3. 使用 `yarn test` 测试 src/ 目录的 *.test.js 文件，命令详请：
-
-```
-node ./node_modules/.bin/jest ./src
-```
-
-另外，可执行 `yarn build:watch` 在文件改动时实时编译，执行 `yarn test:watch` 用于实时测试。
 
 ## 预设 Babel 插件
 
