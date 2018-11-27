@@ -2,6 +2,14 @@
 
 搭建 Node + Babel7 + Jest 的脚手架，用于开发试验 Node 应用。使用 airbnb/babel-preset-airbnb 做 Babel 配置，不去拼凑各种 Babel 插件和配置文件。
 
+## 起步方法
+
+克隆项目：
+
+```
+git clone https://github.com/wenris/node-babel-jest-startkit.git new-app
+```
+
 ## 库包依赖
 
 | 包名 | 版本 | 描述 |
