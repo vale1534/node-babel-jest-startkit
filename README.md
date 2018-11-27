@@ -18,7 +18,7 @@ yarn install --registry=http://registry.npm.taobao.org
 
 ## 项目操作命令
 
-1. 将 src/ 目录下的 js 文件转译到 lib/ 目录：
+将 src/ 目录下的 js 文件转译到 lib/ 目录：
 
 ```sh
 yarn build
@@ -26,7 +26,7 @@ yarn build
 node ./node_modules/.bin/babel ./src --out-dir ./lib
 ```
 
-2. 运行主程序（即`lib/main.js`）：
+运行主程序（即`lib/main.js`）：
 
 ```sh
 yarn start
@@ -34,7 +34,7 @@ yarn start
 node ./lib/main.js
 ```
 
-3. 测试命令
+测试命令
 
 ```sh
 yarn test
